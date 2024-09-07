@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<header>Let's play Rock, Paper, Scissors!</header>
+
+	<div id="game">
+
+		<div id="rules-container">
+			<div id="rules-header">Rules to the game</div>
+			<div id="rules-expanded">put rules here</div>
+		</div> <!-- rules-container -->
+
+		<div id="score-container">
+			<div class="score-display" id="player-score-display">Player Score: <span class="score-value" id="player-score-value">0</span></div>
+			<div class="score-display" id="computer-score-display">Computer Score: <span class="score-value" id="computer-score-value">0</span></div>
+		</div> <!-- score-container -->
+
+		<div id="game-play-container">
+			<div id="choose-prompt-text">Choose an option:</div>
+			<div id="buttons-container">
+				<button class="option-button" id="rock">Rock</button>
+				<button class="option-button" id="paper">Paper</button>
+				<button class="option-button" id="scissors">Scissors</button>
+			</div>
+		</div> <!-- game-play-container -->
+
+		<div id="results-container">
+			<p id="results-text"></p>
+			<button id="play-again" class="hidden">Play again?</button>
+		</div> <!-- results-container -->
+
+	</div> <!-- game -->
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

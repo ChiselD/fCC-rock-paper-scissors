@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(10,10,33);
+	color: white;
+	padding: 1rem;
+}
+
+header {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#game {
+	text-align: center;
+	margin-top: 1.2em;
+/*	border: 1px solid red;*/
+}
+
+#rules-container {
+	background-color: white;
+	color: rgb(10,10,33);
+	border: .3rem solid rgb(233,192,80);
+	border-radius: 12px;
+	padding: .5rem;
+}
+
+#rules-expanded {
+	display: none;
+}
+
+#score-container {
+	/*	border: 1px solid green;*/
+}
+
+.score-display {
+	/*	border: 1px solid red;*/
+	font-size: 1.2rem;
+	font-weight: bold;
+	float: left;
+	margin: 1.5rem auto;
+	text-align: center;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.hidden {
+	display: none;
+}
