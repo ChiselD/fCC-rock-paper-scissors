@@ -10,30 +10,11 @@ header {
 	font-weight: bold;
 }
 
-#game {
-	text-align: center;
-	margin-top: 1.2em;
-/*	border: 1px solid red;*/
-}
-
-#rules-container {
-	background-color: white;
-	color: rgb(10,10,33);
-	border: .3rem solid rgb(233,192,80);
-	border-radius: 12px;
-	padding: .5rem;
-}
-
-#rules-expanded {
+.hidden {
 	display: none;
 }
 
-#score-container {
-	/*	border: 1px solid green;*/
-}
-
 .score-display {
-	/*	border: 1px solid red;*/
 	font-size: 1.2rem;
 	font-weight: bold;
 	float: left;
@@ -43,6 +24,42 @@ header {
 	box-sizing: border-box;
 }
 
-.hidden {
+.option-button {
+	color: rgb(10,10,33);
+	background: linear-gradient(rgb(246,204,99), rgb(243,176,79));
+	border-left: 3px solid rgb(242,176,78);
+	border-top: 3px solid rgb(242,176,78);
+	border-right: 3px solid rgb(161,117,51);
+	border-bottom: 3px solid rgb(161,117,51);
+	margin: 1rem;
+	width: 6rem;
+}
+
+#game {
+	text-align: center;
+	margin-top: 1.2em;
+}
+
+#rules-container {
+	background-color: white;
+	color: rgb(10,10,33);
+	border: .3rem solid rgb(233,192,80);
+	border-radius: 12px;
+	padding: .5rem;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+#rules-expanded {
 	display: none;
+	overflow: hidden;
+}
+
+#choose-prompt-text {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#results-text {
+	font-size: 1.2rem;
 }

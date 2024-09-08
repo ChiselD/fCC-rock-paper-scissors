@@ -1,3 +1,6 @@
+const rulesHeader = document.getElementById("rules-header");
+const expandedRules = document.getElementById("rules-expanded");
+
 const playerScoreText = document.querySelector("#player-score-value");
 const computerScoreText = document.querySelector("#computer-score-value");
 
@@ -13,6 +16,16 @@ const choices = ["Rock", "Paper", "Scissors"];
 let playerScore = 0;
 let computerScore = 0;
 let winner = null;
+
+
+rulesHeader.addEventListener("click", function() {
+	this.classList.toggle("active");
+	if (expandedRules.style.display === "block") {
+		expandedRules.style.display = "none";
+	} else {
+		expandedRules.style.display = "block";
+	}
+})
 
 function restartGame() {
 	playerScore = 0;
